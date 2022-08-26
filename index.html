@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>
+        Assignment 2 - Icon Design
+    </title>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js">
+    </script>
+    <style>
+        .row{
+            width:720px;
+            margin: 20px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(241, 230, 182);">
+    <h1>Welcome to the Icon Designs of s3942372</h1>
+    <h2>Please click and hold the icons.</h2>
+
+    <div class="row">
+        <div class="image-container">
+            <img id="butterfly" src="img/Butterfly_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Butterfly_2.png';"
+            onmouseup= "this.src='img/Butterfly_1.png';"
+            />
+        </div>
+        
+        <div class="image-container">
+            <img id="dandelion" src="img/Dandelion_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Dandelion_2.png';"
+            onmouseup= "this.src='img/Dandelion_1.png';"                 
+            />
+        </div>
+        
+        <div class="image-container">
+            <img id="bird" src="img/Bird_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Bird_2.png';"
+            onmouseup= "this.src='img/Bird_1.png';"
+            />
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <img id="plant" src="img/Plant_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Plant_2.png';"
+            onmouseup= "this.src='img/Plant_1.png';"
+            />
+        </div>
+        <div class="image-container">
+            <img id="deer" src="img/Deer_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Deer_2.png';"
+            onmouseup= "this.src='img/Deer_1.png';"
+            />
+        </div>
+        <div class="image-container">
+            <img id="tree" src="img/Tree_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Tree_2.png';"
+            onmouseup= "this.src='img/Tree_1.png';"
+            />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <img id="duck" src="img/Duck_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Duck_2.png';"
+            onmouseup= "this.src='img/Duck_1.png';"
+            />
+        </div>
+        <div class="image-container">
+            <img id="lotus" src="img/Lotus_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Lotus_2.png';"
+            onmouseup= "this.src='img/Lotus_1.png';"
+            />
+        </div>
+        <div class="image-container">
+            <img id="frog" src="img/Frog_1.png" height="200" width="200"
+            onmousedown= "this.src='img/Frog_2.png';"
+            onmouseup= "this.src='img/Frog_1.png';"
+            />
+        </div>
+    </div>
+
+</body>
+
+    <script>
+        var sound1 = new buzz.sound("sound/Butterfly.mp3");
+        var sound2 = new buzz.sound("sound/Wind.mp3");
+        var sound3 = new buzz.sound("sound/Bird.mp3");
+        var sound4 = new buzz.sound("sound/Leaves.mp3");
+        var sound5 = new buzz.sound("sound/Deer.mp3");
+        var sound6 = new buzz.sound("sound/Tree.mp3");
+        var sound7 = new buzz.sound("sound/Duck.mp3");
+        var sound8 = new buzz.sound("sound/Lotus.mp3");
+        var sound9 = new buzz.sound("sound/Frog.mp3");
+        
+        window.onload = function() {
+            document.getElementById('butterfly').addEventListener('mousedown', function () {sound1.play();});
+            document.getElementById('dandelion').addEventListener('mousedown', function () {sound2.play();});
+            document.getElementById('bird').addEventListener('mousedown', function () {sound3.play();});
+            document.getElementById('plant').addEventListener('mousedown', function () {sound4.play();});
+            document.getElementById('deer').addEventListener('mousedown', function () {sound5.play();});
+            document.getElementById('tree').addEventListener('mousedown', function () {sound6.play();});
+            document.getElementById('duck').addEventListener('mousedown', function () {sound7.play();});
+            document.getElementById('lotus').addEventListener('mousedown', function () {sound8.play();});
+            document.getElementById('frog').addEventListener('mousedown', function () {sound9.play();});
+        };
+    </script>
+</body>
+
+</html>
